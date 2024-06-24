@@ -1,9 +1,9 @@
-
+import styles from './hero-header.module.scss'
 
 export default function HeroHeader() {
-    return (
-      <div className="mainContainer">
-        
-      </div>
-    );
-  }
+  return (
+    <div className={styles.mainContainer}>
+      
+    </div>
+  );
+}
