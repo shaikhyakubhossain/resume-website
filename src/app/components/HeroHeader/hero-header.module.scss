@@ -1,0 +1,26 @@
+$fontFamilyDefault: sans-serif;
+$colorPrimary: #334155;
+$colorSecondary: #64748B;
+
+.mainContainer {
+    background: rgb(255,100,244);
+    background: linear-gradient(81deg, rgba(255,100,244,1) 0%, rgba(100,213,255,1) 100%);
+}
+
+.heroTitle {
+    color: $colorPrimary;
+    font-size: 48px;
+    // height: 32px;
+    font-family: $fontFamilyDefault;
+}
+
+.heroSubTitle {
+    color: $colorSecondary;
+    font-size: 20px;
+    font-family: $fontFamilyDefault;
+}
+
+.contacts > div {
+    color: $colorPrimary;
+    margin: 4px 8px;
+}
