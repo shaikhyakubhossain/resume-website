@@ -21,6 +21,11 @@ $colorSecondary: #64748B;
 }
 
 .contacts > div {
+    display: flex;
     color: $colorPrimary;
     margin: 4px 8px;
+}
+
+.HiMapPin, .HiMail {
+    color: $colorPrimary;
 }
