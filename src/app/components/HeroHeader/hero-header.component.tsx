@@ -18,7 +18,7 @@ export default function HeroHeader() {
         {
           linkBtnArr.map((item):React.ReactNode => {
             return  (
-              <LinkBtn customTWStyle={""} icon={item.icon} txtBorderIconColor={item.txtBorderIconColor} >{item.text}</LinkBtn>
+              <LinkBtn customTWStyle={""} icon={item.icon} txtBorderIconColor={item.txtBorderIconColor} bgColor={item.bgColor} >{item.text}</LinkBtn>
             )
           })
         }
