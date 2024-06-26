@@ -30,12 +30,31 @@ $colorSecondary: #64748B;
     color: $colorPrimary;
 }
 
-.linkedin {
-    background: #F1F8FF;
-    color: #0A66C2;
-    border-color: #0A66C2;
+.linkBtnContainer {
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
 }
 
-.linkBtnContainer {
-    
+.linkBtn {
+    transition: 0.150s;
+}
+
+.linkBtn:hover {
+    transform: translateZ(80px);
+}
+
+.linkBtn:hover + *{
+    transform: translateZ(60px);
+}
+
+.linkBtn:hover + * + *{
+    transform: translateZ(20px);
+}
+
+.linkBtn:has(+ *:hover){
+    transform: translateZ(60px);
+}
+
+.linkBtn:has(+ * + *:hover){
+    transform: translateZ(20px);
 }

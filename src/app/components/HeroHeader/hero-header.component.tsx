@@ -16,9 +16,9 @@ export default function HeroHeader() {
       </div>
       <div className={`${styles.linkBtnContainer} flex justify-center`}>
         {
-          linkBtnArr.map((item):React.ReactNode => {
+          linkBtnArr.map((item, index):React.ReactNode => {
             return  (
-              <LinkBtn customTWStyle={""} icon={item.icon} txtBorderIconColor={item.txtBorderIconColor} bgColor={item.bgColor} >{item.text}</LinkBtn>
+              <LinkBtn key={index} customBtnClassName={styles.linkBtn} customTWStyle={""} icon={item.icon} txtBorderIconColor={item.txtBorderIconColor} bgColor={item.bgColor} >{item.text}</LinkBtn>
             )
           })
         }
