@@ -5,7 +5,7 @@ type propsType = {
     customTextClassName?: string,
     customTWStyle: string,
     children: React.ReactNode,
-    logo: React.ReactNode,
+    logo: React.ReactNode
 }
 
 export default function LinkBtn(props: propsType) {
