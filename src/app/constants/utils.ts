@@ -31,13 +31,13 @@ export const linkBtnArr: linkBtnType[] = [
     },
     {
         icon: FaFigma,
-        text: "/yakub-hossain",
+        text: "/shaikhyakubhossain",
         txtBorderIconColor: '#F24E1E',
         bgColor: '#FFF4F1'
     },
     {
         icon: IoLogoGithub,
-        text: "/yakub-hossain",
+        text: "/shaikhyakubhossain",
         txtBorderIconColor: '#222222',
         bgColor: '#F2F2F2'
     }
