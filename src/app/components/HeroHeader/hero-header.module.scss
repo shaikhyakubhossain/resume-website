@@ -2,9 +2,21 @@ $fontFamilyDefault: sans-serif;
 $colorPrimary: #334155;
 $colorSecondary: #64748B;
 
+.gradient {
+    position: absolute;
+    width: 100%;
+    background: rgba(255,0,123, 0.72);
+    background: linear-gradient(90deg, rgba(255,0,123,0.72) 0%, rgba(0,118,255,0.72) 100%);
+    
+    filter: blur(100px);
+    transform: translateY(-80%);    
+    z-index: -1;
+
+}
+
 .mainContainer {
-    background: rgb(255,100,244);
-    background: linear-gradient(81deg, rgba(255,100,244,1) 0%, rgba(100,213,255,1) 100%);
+    position: relative;
+
 }
 
 .heroTitle {
