@@ -7,9 +7,9 @@ type propsType = {
 
 export default function Section(props: propsType) {
     return (
-        <div className={`${styles.mainContainer} w-full flex justify-center text-center`}>
-            <div className={`${styles.sectionName}`}>{props.sectionName}</div>
-            <div className={`${styles.sectionContent}`}>
+        <div className={`${styles.mainContainer} w-full flex justify-center`}>
+            <div className={`${styles.sectionName} font-bold text-center`}>{props.sectionName}</div>
+            <div className={`${styles.sectionContent} text-left pl-10`}>
                 {props.children}
             </div>
         </div>

@@ -1,3 +1,6 @@
+@use "../../constants/CssUtils/color.scss";
+
+
 .mainContainer {
 
 }
@@ -8,6 +11,7 @@
 
 .sectionName {
     width: 25%;
+    color: color.$colorPrimary;
 
 }
 
