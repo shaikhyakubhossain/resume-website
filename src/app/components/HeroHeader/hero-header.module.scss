@@ -1,6 +1,5 @@
-$fontFamilyDefault: sans-serif;
-$colorPrimary: #334155;
-$colorSecondary: #64748B;
+@use "../../constants/CssUtils/color.scss";
+@use "../../constants/CssUtils/font.scss";
 
 .gradient {
     position: absolute;
@@ -20,26 +19,26 @@ $colorSecondary: #64748B;
 }
 
 .heroTitle {
-    color: $colorPrimary;
+    color: color.$colorPrimary;
     font-size: 48px;
     // height: 32px;
-    font-family: $fontFamilyDefault;
+    font-family: font.$fontFamilyDefault;
 }
 
 .heroSubTitle {
-    color: $colorSecondary;
+    color: color.$colorSecondary;
     font-size: 20px;
-    font-family: $fontFamilyDefault;
+    font-family: font.$fontFamilyDefault;
 }
 
 .contacts > div {
     display: flex;
-    color: $colorPrimary;
+    color: color.$colorPrimary;
     margin: 4px 8px;
 }
 
 .HiMapPin, .HiMail {
-    color: $colorPrimary;
+    color: color.$colorPrimary;
 }
 
 .linkBtnContainer {

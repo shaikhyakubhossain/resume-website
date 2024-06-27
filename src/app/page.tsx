@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div>
       <HeroHeader />
-      <Section sectionName="Education">hi</Section>
+      <Section sectionName="Education">hello</Section>
     </div>
   );
 }
