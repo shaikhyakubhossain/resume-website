@@ -1,7 +1,7 @@
 import { IconType } from "react-icons";
 import { FaLinkedin } from "react-icons/fa6";
 import { HiOutlineGlobeAlt } from "react-icons/hi2";
-import { FaFigma } from "react-icons/fa";
+import { TbBrandLeetcode } from "react-icons/tb"
 import { IoLogoGithub } from "react-icons/io";
 
 
@@ -30,7 +30,7 @@ export const linkBtnArr: linkBtnType[] = [
         bgColor: '#F1F8FF'
     },
     {
-        icon: FaFigma,
+        icon: TbBrandLeetcode,
         text: "/shaikhyakubhossain",
         txtBorderIconColor: '#F24E1E',
         bgColor: '#FFF4F1'
