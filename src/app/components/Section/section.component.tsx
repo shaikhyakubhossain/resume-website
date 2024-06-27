@@ -1,9 +1,17 @@
-import styles from './section.module.scss'
+import styles from './section.module.scss';
 
-export default function Section() {
+type propsType = {
+    sectionName: string,
+    children: React.ReactNode
+}
+
+export default function Section(props: propsType) {
     return (
-        <div className={`${styles.mainContainer}`}>
-            
+        <div className={`${styles.mainContainer} w-full flex justify-center text-center`}>
+            <div className={`${styles.sectionName}`}>{props.sectionName}</div>
+            <div className={`${styles.sectionContent}`}>
+                {props.children}
+            </div>
         </div>
     )
 }
