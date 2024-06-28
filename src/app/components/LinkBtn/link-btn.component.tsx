@@ -11,7 +11,7 @@ type propsType = {
   // customTextClassName?: string,
 }
 
-export default function LinkBtn(props: propsType) {
+export default function LinkBtn(props: propsType): JSX.Element {
   return (
     <button style={{borderColor: props.txtBorderIconColor, background:props.bgColor}} className={`${props.customBtnClassName} flex mx-2 bg-transparent font-semibold py-2 px-4 border-2 hover:border-transparent rounded-full` + props.customTWStyle}>
         <div style={{color: props.txtBorderIconColor}} className={` my-auto mr-1 text-2xl`}>{<props.icon />}</div>

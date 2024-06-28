@@ -4,7 +4,7 @@ import { HiMail } from "react-icons/hi";
 import LinkBtn from '../LinkBtn/link-btn.component';
 import {linkBtnArr} from '../../constants/utils'
 
-export default function HeroHeader() {
+export default function HeroHeader(): JSX.Element {
   // console.log("linkBtnArr: ", linkBtnArr);
   return (
     <div className={`${styles.mainContainer} w-full text-center mb-20`}>

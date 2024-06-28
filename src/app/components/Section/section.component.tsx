@@ -5,7 +5,7 @@ type propsType = {
     children: React.ReactNode
 }
 
-export default function Section(props: propsType) {
+export default function Section(props: propsType): JSX.Element {
     return (
         <div className={`${styles.mainContainer} w-full flex justify-center`}>
             <div className={`${styles.sectionName} font-bold text-center`}>{props.sectionName}</div>
