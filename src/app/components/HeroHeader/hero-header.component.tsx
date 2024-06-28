@@ -7,7 +7,7 @@ import {linkBtnArr} from '../../constants/utils'
 export default function HeroHeader() {
   // console.log("linkBtnArr: ", linkBtnArr);
   return (
-    <div className={`${styles.mainContainer} w-full text-center`}>
+    <div className={`${styles.mainContainer} w-full text-center mb-20`}>
       <div className={`${styles.gradient} h-full`}></div>
       <div className={`${styles.heroTitle} font-extrabold mt-16`}>Shaikh Yakub Hossain</div>
       <div className={`${styles.heroSubTitle}`}>Full-Stack Developer</div>
