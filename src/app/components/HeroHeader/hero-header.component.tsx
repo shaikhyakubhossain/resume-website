@@ -9,7 +9,7 @@ export default function HeroHeader(): JSX.Element {
   return (
     <div className={`${styles.mainContainer} w-full text-center mb-20`}>
       <div className={`${styles.gradient} h-full`}></div>
-      <div className={`${styles.heroTitle} font-extrabold mt-16`}>Shaikh Yakub Hossain</div>
+      <div className={`${styles.heroTitle} font-bold mt-16`}>Shaikh Yakub Hossain</div>
       <div className={`${styles.heroSubTitle}`}>Full-Stack Developer</div>
       <div className={`${styles.contacts} flex justify-center mt-5`}>
           <div className={`${styles.locationContainer}`}><HiMapPin className={`${styles.HiMapPin} my-auto mr-1`} /><div className={`${styles.location}`}>India</div></div>
