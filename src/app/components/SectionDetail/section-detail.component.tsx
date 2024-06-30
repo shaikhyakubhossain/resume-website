@@ -16,9 +16,9 @@ export default function SectionDetail(props: propsType): JSX.Element {
     <div className={styles.mainContainer}>
       <div className={`${styles.header} flex justify-between mr-32`}>
         <div className={`${styles.titleAndSubTitleContainer} flex`}>
-          <div className={`${styles.title} font-bold`}>{props.title}</div>
+          <div className={`${styles.title} font-bold text-lg`}>{props.title}</div>
           <div>&nbsp;—&nbsp;</div>
-          <div className={`${styles.subTitle}`}>{props.subTitle}</div>
+          <div className={`${styles.subTitle} text-lg`}>{props.subTitle}</div>
         </div>
 
         <div className={`${styles.date} flex`}>
@@ -36,7 +36,7 @@ export default function SectionDetail(props: propsType): JSX.Element {
               return (
                 <span
                   key={index}
-                  className="bg-gray-100 text-gray-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-200 dark:text-gray-500"
+                  className="bg-gray-100 text-gray-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-200 dark:text-gray-500"
                 >
                   {item}
                 </span>
@@ -48,7 +48,7 @@ export default function SectionDetail(props: propsType): JSX.Element {
         {props.details
           ? props.details.map((item, index): JSX.Element => {
               return (
-                <div className={`${styles.subDetailContainer} flex`}>
+                <div key={index} className={`${styles.subDetailContainer} flex`}>
                   <div className={`${styles.subDetailBulletPoint} my-auto text-2xl mr-2 text-gray-300`}><TbPointFilled /></div>
                   <div>{item}</div>
                 </div>
