@@ -1,5 +1,6 @@
 import styles from "./section-detail.module.scss";
 import { HiOutlineCalendarDays } from "react-icons/hi2";
+import { TbPointFilled } from "react-icons/tb";
 
 type propsType = {
   title: string;
@@ -21,7 +22,7 @@ export default function SectionDetail(props: propsType): JSX.Element {
         </div>
 
         <div className={`${styles.date} flex`}>
-          <div className={`${styles.calendarIcon} my-auto`}>
+          <div className={`${styles.calendarIcon} my-auto text-2xl mr-2`}>
             <HiOutlineCalendarDays />
           </div>
           <div className={`${styles.dateFrom}`}>{props.dateFrom}</div>
@@ -31,11 +32,11 @@ export default function SectionDetail(props: propsType): JSX.Element {
       </div>
       <div className={`${styles.techStack}`}>
         {props.techStack
-          ? props.techStack.map((item, index) => {
+          ? props.techStack.map((item, index): JSX.Element => {
               return (
                 <span
                   key={index}
-                  className="bg-gray-100 text-gray-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300"
+                  className="bg-gray-100 text-gray-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-200 dark:text-gray-500"
                 >
                   {item}
                 </span>
@@ -43,13 +44,13 @@ export default function SectionDetail(props: propsType): JSX.Element {
             })
           : null}
       </div>
-      <div className={`${styles.details}`}>
+      <div className={`${styles.detailsContainer}`}>
         {props.details
-          ? props.details.map((item, index) => {
+          ? props.details.map((item, index): JSX.Element => {
               return (
-                <div>
-                  <div></div>
-                  <div></div>
+                <div className={`${styles.subDetailContainer} flex`}>
+                  <div className={`${styles.subDetailBulletPoint} my-auto text-2xl mr-2 text-gray-300`}><TbPointFilled /></div>
+                  <div>{item}</div>
                 </div>
               );
             })

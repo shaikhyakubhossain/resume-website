@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div>
       <HeroHeader />
-      <Section sectionName="Education"><SectionDetail title={"test"} subTitle={"testing"} dateFrom="june 29" dateTo="present" /></Section>
+      <Section sectionName="Education"><SectionDetail title={"test"} subTitle={"testing"} dateFrom="june 29" dateTo="present" techStack={["test", "testing"]} details={["testing", "testing"]} /></Section>
     </div>
   );
 }
