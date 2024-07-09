@@ -1,8 +1,7 @@
 import styles from './hero-header.module.scss';
-import { HiMapPin } from "react-icons/hi2";
-import { HiMail } from "react-icons/hi";
 import LinkBtn from '../LinkBtn/link-btn.component';
-import {linkBtnIconArr} from '../../constants/utils';
+import {linkBtnIconArr, contactsIconArr} from '../../constants/utils';
+import Contact from '../Contact/contact.component';
 
 type userDataHeaderLinksType = {
   iconName: string,
@@ -30,8 +29,13 @@ export default function HeroHeader(props: propsType): JSX.Element {
       <div className={`${styles.heroTitle} font-bold mt-16`}>{props.headerData.title}</div>
       <div className={`${styles.heroSubTitle}`}>{props.headerData.subTitle}</div>
       <div className={`${styles.contacts} flex justify-center mt-5`}>
-          <div className={`${styles.locationContainer}`}><HiMapPin className={`${styles.HiMapPin} my-auto mr-1`} /><div className={`${styles.location}`}>India</div></div>
-          <div className={`${styles.gmailContainer}`}><HiMail className={`${styles.HiMail} my-auto mr-1`} /><div className={`${styles.gmail}`}>shaikhyakubhossain@gmail.com</div></div>
+        {
+          props.headerData.contacts.map((item, index): JSX.Element => {
+            return (
+                <Contact mainContainerClassName={`${styles.locationContainer}`} iconClassName={`${styles.HiMapPin}`} textClassName={`${styles.location}`} icon={contactsIconArr[index].icon} text={item} /> 
+            )
+          })
+        }
       </div>
       <div className={`${styles.linkBtnContainer} flex justify-center`}>
         {

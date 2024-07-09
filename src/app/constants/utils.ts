@@ -4,9 +4,12 @@ import { HiOutlineGlobeAlt } from "react-icons/hi2";
 import { TbBrandLeetcode } from "react-icons/tb"
 import { IoLogoGithub } from "react-icons/io";
 
+import { HiMapPin } from "react-icons/hi2";
+import { HiMail } from "react-icons/hi";
 
-type linkBtnIconArrType = {
-    icon: IconType,
+
+// type linkBtnIconArrType = {
+    // icon: IconType,
     // text: React.ReactNode,
     // txtBorderIconColor: string,
     // bgColor: string
@@ -14,9 +17,14 @@ type linkBtnIconArrType = {
     // customIconClassName?: string,
     // customTextClassName?: string,
     // customTWStyle: string
+// }
+
+type iconArr = {
+    icon: IconType
 }
 
-export const linkBtnIconArr: linkBtnIconArrType[] = [
+
+export const linkBtnIconArr: iconArr[] = [
     {
         icon: HiOutlineGlobeAlt,
     },
@@ -33,4 +41,14 @@ export const linkBtnIconArr: linkBtnIconArrType[] = [
         icon: IoLogoGithub,
     }
     
+]
+
+export const contactsIconArr: iconArr[] = [
+    {
+        icon: HiMapPin,
+    },
+
+    {
+        icon: HiMail,
+    }
 ]
