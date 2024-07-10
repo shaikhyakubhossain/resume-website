@@ -32,7 +32,7 @@ export default function HeroHeader(props: propsType): JSX.Element {
         {
           props.headerData.contacts.map((item, index): JSX.Element => {
             return (
-                <Contact mainContainerClassName={`${styles.locationContainer}`} iconClassName={`${styles.HiMapPin}`} textClassName={`${styles.location}`} icon={contactsIconArr[index].icon} text={item} /> 
+                <Contact key={index} mainContainerClassName={`${styles.locationContainer}`} iconClassName={`${styles.HiMapPin}`} textClassName={`${styles.location}`} icon={contactsIconArr[index].icon} text={item} /> 
             )
           })
         }
