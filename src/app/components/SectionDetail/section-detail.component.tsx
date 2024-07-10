@@ -8,7 +8,7 @@ type propsType = {
   dateFrom: string;
   dateTo: string;
   techStack?: string[];
-  details?: string[];
+  detailArr?: string[];
 };
 
 export default function SectionDetail(props: propsType): JSX.Element {
@@ -45,8 +45,8 @@ export default function SectionDetail(props: propsType): JSX.Element {
           : null}
       </div>
       <div className={`${styles.detailsContainer}`}>
-        {props.details
-          ? props.details.map((item, index): JSX.Element => {
+        {props.detailArr
+          ? props.detailArr.map((item, index): JSX.Element => {
               return (
                 <div key={index} className={`${styles.subDetailContainer} flex`}>
                   <div className={`${styles.subDetailBulletPoint} my-auto text-2xl mr-2 text-gray-300`}><TbPointFilled /></div>
