@@ -6,8 +6,8 @@ import SectionDetail from "./components/SectionDetail/section-detail.component";
 
 export default async function Home() {
 
-  const response: Response = await fetch("http://localhost:4000/userData", {cache: 'no-store'});
-  // const response = await fetch("http://localhost:4000/userData");
+  const response: Response = await fetch("https://rwb5v352kyg5uy4g5ug53u5gu3g56h65bbusfsdf111dadasdsawewwee.vercel.app/userData", {cache: 'no-store'});
+  // const response: Response = await fetch("http://localhost:4000/userData", {cache: 'no-store'});
 
   type sectionDetailType = {
     title: string
