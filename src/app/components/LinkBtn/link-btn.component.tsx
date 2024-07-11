@@ -13,7 +13,7 @@ type propsType = {
 
 export default function LinkBtn(props: propsType): JSX.Element {
   return (
-    <button style={{borderColor: props.txtBorderIconColor, background:props.bgColor}} className={`${props.customBtnClassName} flex mx-2 bg-transparent font-semibold py-2 px-4 border-2 hover:border-transparent rounded-full` + props.customTWStyle}>
+    <button style={{borderColor: props.txtBorderIconColor, background:props.bgColor}} className={`${props.customBtnClassName} flex lg:mx-2 lg:my-1 mx-auto my-5  bg-transparent font-semibold py-2 px-4 border-2 hover:border-transparent rounded-full ` + props.customTWStyle}>
         <div style={{color: props.txtBorderIconColor}} className={` my-auto mr-1 text-2xl`}>{<props.icon />}</div>
         <div style={{color: props.txtBorderIconColor}} className={``} >{props.children}</div>
     </button>

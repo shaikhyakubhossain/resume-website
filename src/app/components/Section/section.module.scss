@@ -10,11 +10,22 @@
 }
 
 .sectionName {
-    width: 25%;
+    width: 100%;
     color: color.$colorPrimary;
 
 }
 
 .sectionContent {
-    width: 75%;
+    width: 100%;
+}
+
+@media (min-width: 1024px) {
+    .sectionName {
+        width: 25%;
+
+    }
+
+    .sectionContent {
+        width: 75%;
+    }
 }

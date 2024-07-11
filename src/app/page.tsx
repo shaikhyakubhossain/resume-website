@@ -25,7 +25,7 @@ export default async function Home() {
   
   const userData = await response.json();
 
-  console.log(userData.sections);
+  // console.log(userData.sections);
 
   return  (
     <div>

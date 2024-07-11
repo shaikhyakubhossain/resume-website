@@ -13,8 +13,8 @@ type propsType = {
 
 export default function SectionDetail(props: propsType): JSX.Element {
   return (
-    <div className={styles.mainContainer}>
-      <div className={`${styles.header} flex justify-between mr-32`}>
+    <div className={`${styles.mainContainer} ml-10`}>
+      <div className={`${styles.header} lg:flex justify-between lg:mr-32 my-2`}>
         <div className={`${styles.titleAndSubTitleContainer} flex`}>
           <div className={`${styles.title} font-bold text-lg`}>{props.title}</div>
           <div>&nbsp;—&nbsp;</div>
@@ -30,16 +30,16 @@ export default function SectionDetail(props: propsType): JSX.Element {
           <div className={`${styles.dateTo}`}>{props.dateTo}</div>
         </div>
       </div>
-      <div className={`${styles.techStack}`}>
+      <div className={`${styles.techStack} flex flex-wrap `}>
         {props.techStack
           ? props.techStack.map((item, index): JSX.Element => {
               return (
-                <span
+                <div
                   key={index}
-                  className="bg-gray-100 text-gray-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-200 dark:text-gray-500"
+                  className="bg-gray-100 text-gray-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-200 dark:text-gray-500 mb-2"
                 >
                   {item}
-                </span>
+                </div>
               );
             })
           : null}

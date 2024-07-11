@@ -37,7 +37,7 @@ export default function HeroHeader(props: propsType): JSX.Element {
           })
         }
       </div>
-      <div className={`${styles.linkBtnContainer} flex justify-center`}>
+      <div className={`${styles.linkBtnContainer} flex flex-wrap justify-center`}>
         {
           props.headerData.links.map((item, index):React.ReactNode => {
             return  (
