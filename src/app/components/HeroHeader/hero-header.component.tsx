@@ -8,6 +8,7 @@ type userDataHeaderLinksType = {
   text: string,
   txtBorderIconColor: string,
   bgColor: string,
+  linkUrl: string
 }
 
 type userDataHeaderType = {
@@ -41,7 +42,7 @@ export default function HeroHeader(props: propsType): JSX.Element {
         {
           props.headerData.links.map((item, index):React.ReactNode => {
             return  (
-              <LinkBtn key={index} customBtnClassName={styles.linkBtn} customTWStyle={""} icon={linkBtnIconArr[index].icon} txtBorderIconColor={item.txtBorderIconColor} bgColor={item.bgColor} >{item.text}</LinkBtn>
+              <LinkBtn key={index} customBtnClassName={styles.linkBtn} customTWStyle={""} icon={linkBtnIconArr[index].icon} txtBorderIconColor={item.txtBorderIconColor} bgColor={item.bgColor} linkUrl={item.linkUrl} >{item.text}</LinkBtn>
             )
           })
         }
