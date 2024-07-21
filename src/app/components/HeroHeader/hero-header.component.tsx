@@ -1,7 +1,11 @@
 import styles from './hero-header.module.scss';
 import LinkBtn from '../LinkBtn/link-btn.component';
-import {linkBtnIconArr, contactsIconArr} from '../../constants/utils';
 import Contact from '../Contact/contact.component';
+
+type userDataHeaderContactsType = {
+  base64IconCode: string,
+  text: string
+}
 
 type userDataHeaderLinksType = {
   base64IconCode: string,
@@ -14,7 +18,7 @@ type userDataHeaderLinksType = {
 type userDataHeaderType = {
   title: string,
   subTitle: string,
-  contacts: string[],
+  contacts: userDataHeaderContactsType[],
   links: userDataHeaderLinksType[]
 }
 
@@ -33,7 +37,7 @@ export default function HeroHeader(props: propsType): JSX.Element {
         {
           props.headerData.contacts.map((item, index): JSX.Element => {
             return (
-                <Contact key={index} mainContainerClassName={`${styles.locationContainer}`} iconClassName={`${styles.HiMapPin}`} textClassName={`${styles.location}`} base64IconCode={contactsIconArr[index].icon} text={item} /> 
+                <Contact key={index} mainContainerClassName={`${styles.locationContainer}`} iconClassName={`${styles.HiMapPin}`} textClassName={`${styles.location}`} base64IconCode={item.base64IconCode} text={item.text} /> 
             )
           })
         }
@@ -42,7 +46,7 @@ export default function HeroHeader(props: propsType): JSX.Element {
         {
           props.headerData.links.map((item, index):React.ReactNode => {
             return  (
-              <LinkBtn key={index} customBtnClassName={styles.linkBtn} customTWStyle={""} base64IconCode={linkBtnIconArr[index].icon} txtBorderIconColor={item.txtBorderIconColor} bgColor={item.bgColor} linkUrl={item.linkUrl} >{item.text}</LinkBtn>
+              <LinkBtn key={index} customBtnClassName={styles.linkBtn} customTWStyle={""} base64IconCode={item.base64IconCode} txtBorderIconColor={item.txtBorderIconColor} bgColor={item.bgColor} linkUrl={item.linkUrl} >{item.text}</LinkBtn>
             )
           })
         }
