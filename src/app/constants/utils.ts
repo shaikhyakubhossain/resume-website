@@ -1,12 +1,3 @@
-import { IconType } from "react-icons";
-import { FaLinkedin } from "react-icons/fa6";
-import { HiOutlineGlobeAlt } from "react-icons/hi2";
-import { TbBrandLeetcode } from "react-icons/tb"
-import { IoLogoGithub } from "react-icons/io";
-
-import { HiMapPin } from "react-icons/hi2";
-import { HiMail } from "react-icons/hi";
-
 
 // type linkBtnIconArrType = {
     // icon: IconType,
@@ -20,35 +11,35 @@ import { HiMail } from "react-icons/hi";
 // }
 
 type iconArr = {
-    icon: IconType
+    icon: string
 }
 
 
 export const linkBtnIconArr: iconArr[] = [
     {
-        icon: HiOutlineGlobeAlt,
+        icon: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCAyNCAyNCIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZT0iIzdDM0FFRCIgY2xhc3M9InNpemUtNiI+CiAgPHBhdGggc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBkPSJNMTIgMjFhOS4wMDQgOS4wMDQgMCAwIDAgOC43MTYtNi43NDdNMTIgMjFhOS4wMDQgOS4wMDQgMCAwIDEtOC43MTYtNi43NDdNMTIgMjFjMi40ODUgMCA0LjUtNC4wMyA0LjUtOVMxNC40ODUgMyAxMiAzbTAgMThjLTIuNDg1IDAtNC41LTQuMDMtNC41LTlTOS41MTUgMyAxMiAzbTAgMGE4Ljk5NyA4Ljk5NyAwIDAgMSA3Ljg0MyA0LjU4Mk0xMiAzYTguOTk3IDguOTk3IDAgMCAwLTcuODQzIDQuNTgybTE1LjY4NiAwQTExLjk1MyAxMS45NTMgMCAwIDEgMTIgMTAuNWMtMi45OTggMC01Ljc0LTEuMS03Ljg0My0yLjkxOG0xNS42ODYgMEE4Ljk1OSA4Ljk1OSAwIDAgMSAyMSAxMmMwIC43NzgtLjA5OSAxLjUzMy0uMjg0IDIuMjUzbTAgMEExNy45MTkgMTcuOTE5IDAgMCAxIDEyIDE2LjVjLTMuMTYyIDAtNi4xMzMtLjgxNS04LjcxNi0yLjI0N20wIDBBOS4wMTUgOS4wMTUgMCAwIDEgMyAxMmMwLTEuNjA1LjQyLTMuMTEzIDEuMTU3LTQuNDE4IiAvPgo8L3N2Zz4K",
     },
     
     {
-        icon: FaLinkedin,
+        icon: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NDggNTEyIj48IS0tIUZvbnQgQXdlc29tZSBGcmVlIDYuNi4wIGJ5IEBmb250YXdlc29tZSAtIGh0dHBzOi8vZm9udGF3ZXNvbWUuY29tIExpY2Vuc2UgLSBodHRwczovL2ZvbnRhd2Vzb21lLmNvbS9saWNlbnNlL2ZyZWUgQ29weXJpZ2h0IDIwMjQgRm9udGljb25zLCBJbmMuLS0+PHBhdGggZmlsbD0iIzBhNjZjMiIgZD0iTTQxNiAzMkgzMS45QzE0LjMgMzIgMCA0Ni41IDAgNjQuM3YzODMuNEMwIDQ2NS41IDE0LjMgNDgwIDMxLjkgNDgwSDQxNmMxNy42IDAgMzItMTQuNSAzMi0zMi4zVjY0LjNjMC0xNy44LTE0LjQtMzIuMy0zMi0zMi4zek0xMzUuNCA0MTZINjlWMjAyLjJoNjYuNVY0MTZ6bS0zMy4yLTI0M2MtMjEuMyAwLTM4LjUtMTcuMy0zOC41LTM4LjVTODAuOSA5NiAxMDIuMiA5NmMyMS4yIDAgMzguNSAxNy4zIDM4LjUgMzguNSAwIDIxLjMtMTcuMiAzOC41LTM4LjUgMzguNXptMjgyLjEgMjQzaC02Ni40VjMxMmMwLTI0LjgtLjUtNTYuNy0zNC41LTU2LjctMzQuNiAwLTM5LjkgMjctMzkuOSA1NC45VjQxNmgtNjYuNFYyMDIuMmg2My43djI5LjJoLjljOC45LTE2LjggMzAuNi0zNC41IDYyLjktMzQuNSA2Ny4yIDAgNzkuNyA0NC4zIDc5LjcgMTAxLjlWNDE2eiIvPjwvc3ZnPg==",
     },
     
     {
-        icon: TbBrandLeetcode,
+        icon: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNGMjRFMUUiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0iaWNvbiBpY29uLXRhYmxlciBpY29ucy10YWJsZXItb3V0bGluZSBpY29uLXRhYmxlci1icmFuZC1sZWV0Y29kZSI+CiAgPHBhdGggc3Ryb2tlPSJub25lIiBkPSJNMCAwaDI0djI0SDB6IiBmaWxsPSJub25lIi8+CiAgPHBhdGggZD0iTTEyIDEzaDcuNSIgLz4KICA8cGF0aCBkPSJNOS40MjQgNy4yNjhsNC45OTkgLTQuOTk5IiAvPgogIDxwYXRoIGQ9Ik0xNi42MzMgMTYuNjQ0bC0yLjQwMiAyLjQxNWEzLjE4OSAzLjE4OSAwIDAgMSAtNC41MjQgMGwtMy43NyAtMy43ODdhMy4yMjMgMy4yMjMgMCAwIDEgMCAtNC41NDRsMy43NyAtMy43ODdhMy4xODkgMy4xODkgMCAwIDEgNC41MjQgMGwyLjMwMiAyLjMxMyIgLz4KPC9zdmc+Cg==",
     },
     
     {
-        icon: IoLogoGithub,
+        icon: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSIjMjIyMjIyIj4KICAgIDxwYXRoIGQ9Ik0xMC45LDIuMWMtNC42LDAuNS04LjMsNC4yLTguOCw4LjdjLTAuNiw1LDIuNSw5LjMsNi45LDEwLjd2LTIuM2MwLDAtMC40LDAuMS0wLjksMC4xYy0xLjQsMC0yLTEuMi0yLjEtMS45Yy0wLjEtMC40LTAuMy0wLjctMC42LTFDNS4xLDE2LjMsNSwxNi4zLDUsMTYuMkM1LDE2LDUuMywxNiw1LjQsMTZjMC42LDAsMS4xLDAuNywxLjMsMWMwLjUsMC44LDEuMSwxLDEuNCwxYzAuNCwwLDAuNy0wLjEsMC45LTAuMmMwLjEtMC43LDAuNC0xLjQsMS0xLjhjLTIuMy0wLjUtNC0xLjgtNC00YzAtMS4xLDAuNS0yLjIsMS4yLTNDNy4xLDguOCw3LDguMyw3LDcuNkM3LDcuMiw3LDYuNiw3LjMsNmMwLDAsMS40LDAsMi44LDEuM0MxMC42LDcuMSwxMS4zLDcsMTIsN3MxLjQsMC4xLDIsMC4zQzE1LjMsNiwxNi44LDYsMTYuOCw2QzE3LDYuNiwxNyw3LjIsMTcsNy42YzAsMC44LTAuMSwxLjItMC4yLDEuNGMwLjcsMC44LDEuMiwxLjgsMS4yLDNjMCwyLjItMS43LDMuNS00LDRjMC42LDAuNSwxLDEuNCwxLDIuM3YzLjNjNC4xLTEuMyw3LTUuMSw3LTkuNUMyMiw2LjEsMTYuOSwxLjQsMTAuOSwyLjF6Ij48L3BhdGg+Cjwvc3ZnPgo=",
     }
     
 ]
 
 export const contactsIconArr: iconArr[] = [
     {
-        icon: HiMapPin,
+        icon: "",
     },
 
     {
-        icon: HiMail,
+        icon: "",
     }
 ]
