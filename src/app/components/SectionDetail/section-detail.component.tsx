@@ -1,6 +1,12 @@
 import styles from "./section-detail.module.scss";
 import { HiOutlineCalendarDays } from "react-icons/hi2";
 import { TbPointFilled } from "react-icons/tb";
+import Link from "next/link";
+
+type links = {
+  url: string,
+  logoBase64: string
+}
 
 type propsType = {
   title: string;
@@ -9,11 +15,12 @@ type propsType = {
   dateTo: string;
   techStack?: string[];
   detailArr?: string[];
+  links?: links[];
 };
 
 export default function SectionDetail(props: propsType): JSX.Element {
   return (
-    <div className={`${styles.mainContainer} ml-10`}>
+    <div className={`${styles.mainContainer} ml-10 mb-2`}>
       <div className={`${styles.header} lg:flex justify-between lg:mr-32 my-2`}>
         <div className={`${styles.titleAndSubTitleContainer} flex`}>
           <div className={`${styles.title} font-bold text-lg`}>{props.title}</div>
@@ -54,6 +61,16 @@ export default function SectionDetail(props: propsType): JSX.Element {
                 </div>
               );
             })
+          : null}
+      </div>
+      <div className={`${styles.linksContainer} flex`}>
+          {props.links ? props.links.map((item, index): JSX.Element => {
+            return (
+              <Link className="my-auto mr-3" href={item.url} key={index}>
+                <img src={item.logoBase64} className="w-5 h-5" alt="" />
+              </Link>
+            )
+          })
           : null}
       </div>
     </div>

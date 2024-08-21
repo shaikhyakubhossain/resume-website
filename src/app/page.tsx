@@ -6,8 +6,13 @@ import SectionDetail from "./components/SectionDetail/section-detail.component";
 
 export default async function Home() {
 
-  const response: Response = await fetch("https://rwb5v352kyg5uy4g5ug53u5gu3g56h65bbusfsdf111dadasdsawewwee.vercel.app/userData", {cache: 'no-store'});
-  // const response: Response = await fetch("http://localhost:4000/userData", {cache: 'no-store'});
+  // const response: Response = await fetch("https://rwb5v352kyg5uy4g5ug53u5gu3g56h65bbusfsdf111dadasdsawewwee.vercel.app/userData", {cache: 'no-store'});
+  const response: Response = await fetch("http://localhost:4000/userData", {cache: 'no-store'});
+
+  type links = {
+    url: string,
+    logoBase64: string
+  }
 
   type sectionDetailType = {
     title: string
@@ -16,6 +21,7 @@ export default async function Home() {
     detailArr: string[],
     dateFrom: string,
     dateTo: string,
+    links?: links[],
   }
 
   type sectionsType = {
@@ -37,7 +43,7 @@ export default async function Home() {
               {
                 item.sectionDetail ? item.sectionDetail.map((item: sectionDetailType, index: number): JSX.Element => {
                   return (
-                    <SectionDetail key={index} title={item.title} subTitle={item.subTitle} techStack={item.techStack} detailArr={item.detailArr} dateFrom={item.dateFrom} dateTo={item.dateTo} />
+                    <SectionDetail key={index} title={item.title} subTitle={item.subTitle} techStack={item.techStack} detailArr={item.detailArr} dateFrom={item.dateFrom} dateTo={item.dateTo} links={item.links} />
                   )
                 }): null
               }
