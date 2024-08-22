@@ -10,9 +10,9 @@ type links = {
 
 type propsType = {
   title: string;
-  subTitle: string;
-  dateFrom: string;
-  dateTo: string;
+  subTitle?: string;
+  dateFrom?: string;
+  dateTo?: string;
   techStack?: string[];
   detailArr?: string[];
   links?: links[];
@@ -24,11 +24,16 @@ export default function SectionDetail(props: propsType): JSX.Element {
       <div className={`${styles.header} lg:flex justify-between lg:mr-32 my-2`}>
         <div className={`${styles.titleAndSubTitleContainer} flex`}>
           <div className={`${styles.title} font-bold text-lg`}>{props.title}</div>
-          <div>&nbsp;—&nbsp;</div>
+          {
+            props.subTitle ? (
+              <div>&nbsp;—&nbsp;</div>
+            ) : null
+          }
           <div className={`${styles.subTitle} text-lg`}>{props.subTitle}</div>
         </div>
-
-        <div className={`${styles.date} flex`}>
+        {
+          props.dateFrom && props.dateTo ? (
+            <div className={`${styles.date} flex`}>
           <div className={`${styles.calendarIcon} my-auto text-2xl mr-2`}>
             <HiOutlineCalendarDays />
           </div>
@@ -36,6 +41,9 @@ export default function SectionDetail(props: propsType): JSX.Element {
           <div className={``}>&nbsp;-&nbsp; </div>
           <div className={`${styles.dateTo}`}>{props.dateTo}</div>
         </div>
+          ) : null
+        }
+        
       </div>
       <div className={`${styles.techStack} flex flex-wrap `}>
         {props.techStack

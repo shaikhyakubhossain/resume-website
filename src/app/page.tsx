@@ -16,11 +16,11 @@ export default async function Home() {
 
   type sectionDetailType = {
     title: string
-    subTitle: string,
+    subTitle?: string,
     techStack?: string[],
     detailArr: string[],
-    dateFrom: string,
-    dateTo: string,
+    dateFrom?: string,
+    dateTo?: string,
     links?: links[],
   }
 
