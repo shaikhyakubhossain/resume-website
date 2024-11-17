@@ -26,8 +26,8 @@ type sectionsType = {
 
 export default async function Home() {
 
-  // const url = "https://rwb5v352kyg5uy4g5ug53u5gu3g56h65bbusfsdf111dadasdsawewwee.vercel.app/userData"
-  const url = "http://localhost:4000/userData"
+  const url = "https://rwb5v352kyg5uy4g5ug53u5gu3g56h65bbusfsdf111dadasdsawewwee.vercel.app/userData"
+  // const url = "http://localhost:4000/userData"
 
   const response: Response = await fetch(url, {
     method: 'GET',
