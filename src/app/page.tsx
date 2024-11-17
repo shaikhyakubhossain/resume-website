@@ -2,7 +2,7 @@ import "./globals.css"
 import HeroHeader from "./components/HeroHeader/hero-header.component";
 import Section from "./components/Section/section.component";
 import SectionDetail from "./components/SectionDetail/section-detail.component";
-import DarkMode from "./components/DarkMode/dark-mode.component";
+// import DarkMode from "./components/DarkMode/dark-mode.component";
 
 type links = {
   url: string,
